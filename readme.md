@@ -24,7 +24,7 @@ The first step is to ensure Python is installed on your operating system (Window
 Download: Get the installer for the latest stable version from the official Python website.
 Installation: Run the installer. On Windows, make sure to check the box that says "Add Python X.Y to PATH" during installation. On macOS and Linux, Python might be pre-installed, or you may need to use a package manager (like brew or apt).
 Verification: Open your terminal or command prompt and type:
-INSTRUCTION FOR TESTING: Testing a Python program that acts as a Credit Card Validator primarily involves checking three things: input handling, adherence to the Luhn Algorithm, and length/prefix rules specific to card brands.
+6.INSTRUCTION FOR TESTING: Testing a Python program that acts as a Credit Card Validator primarily involves checking three things: input handling, adherence to the Luhn Algorithm, and length/prefix rules specific to card brands.
 Here is a structured instruction guide for testing your validator:
 #⚙️ Unit Testing: Core Logic
 The most critical part of your validator is the Luhn Algorithm, which is used by major credit card companies (like Visa and Mastercard) to validate the card number's structure.
