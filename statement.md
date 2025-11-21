@@ -31,15 +31,15 @@ Goal: To generate or test both valid and invalid card numbers according to known
 Need: A tool to quickly confirm if a test number they are using should pass or fail the Luhn check before they use it to test a payment form.
 4. HIGH LEVEL FEATURES- The high-level features of the Credit Card Validator Program are the essential capabilities that fulfill the core requirements of the problem statement. They represent the main tasks the program performs to successfully validate a card number.
 Here are the key high-level features:
-#🧼 Input Sanitization Engine
+# Input Sanitization Engine
 This feature handles the preliminary cleanup of the user's input before any validation logic is applied.
 Function: Automatically strips all non-digit characters (spaces, hyphens, dashes, parentheses, etc.) from the input string.
 Purpose: Ensures that the core validation logic, which relies purely on a sequence of digits, does not fail due to formatting issues or user input errors.
 Output: A clean, contiguous string of digits ready for mathematical and structural checks.
-#📏 Structural Integrity Validation
+#Structural Integrity Validation
 This feature performs the initial structural checks based on the expected format of credit card numbers.Length Check: Verifies that the sanitized number has an industry-standard length (e.g., 13, 15, 16, or 19 digits).
 Prefix Check (Brand Identification): Examines the starting digits to categorize the number as a specific card brand (Visa, Mastercard, Amex, etc.). This is necessary even if the card passes the Luhn check, as most cards must adhere to brand-specific lengths and prefixes.
-#🔢 Luhn Algorithm Processor (Core Validation)
+#Luhn Algorithm Processor (Core Validation)
 This is the central, mathematical feature that determines the theoretical validity of the number's sequence.
 Function: Implements the Mod 10 or Luhn Algorithm logic, which involves doubling every second digit (from right to left), summing the resulting digits, and checking if the total sum is divisible by 10.
 Purpose: Provides a high degree of confidence that the number is not a randomly generated sequence and adheres to the internal mathematical structure of real card numbers.
